@@ -1,1 +1,20 @@
-{{outlet}}
+<ul class='list-inline'>
+  <li>Performance</li>
+  <li>Product</li>
+  <li>Artwork</li>
+  <li>Press</li>
+  <li>Video</li>
+  <li>Recording</li>
+  <li>Album</li>
+  <li>Song</li>
+</ul>
+{{log model.albums}}
+
+{{admin-album-list album=model.albums}}
+{{admin-artwork-list artwork=model.artworks}}
+{{admin-performance-list performance=model.performances}}
+{{admin-press-list pressclip=model.pressclips}}
+{{admin-product-list product=model.products}}
+{{admin-recording-list recording=model.recordings}}
+{{admin-song-list song=model.songs}}
+{{admin-video-list video=model.videos}}
