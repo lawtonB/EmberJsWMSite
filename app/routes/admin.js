@@ -8,7 +8,6 @@ export default Ember.Route.extend({
       performances: this.store.findAll('performance'),
       pressclips: this.store.findAll('pressclip'),
       products: this.store.findAll('product'),
-      recordings: this.store.findAll('recording'),
       songs: this.store.findAll('song'),
       videos: this.store.findAll('video'),
     });
