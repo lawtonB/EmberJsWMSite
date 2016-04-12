@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'wm-site',
     environment: environment,
-    firebase: 'https://wmsite.firebaseio.com/',
+    firebase: 'https://wmsite-test.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
