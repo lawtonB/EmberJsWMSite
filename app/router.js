@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('structure-selected-album', {path: '/structure-selected-album/:album_id'});
   this.route('artwork');
   this.route('press');
+  this.route('video');
 });
 
 export default Router;
