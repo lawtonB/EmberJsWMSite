@@ -1,0 +1,29 @@
+<div class="admin-new-artwork">
+  {{#if addNewArtwork}}
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="title">title</label>
+          {{input value=title id="title"}}
+        </div>
+        <div class="form-group">
+          <label for="artist">artist</label>
+          {{input value=artist id="artist"}}
+        </div>
+        <div class="form-group">
+          <label for="image">image</label>
+          {{input value=image id="image"}}
+        </div>
+        <div class="form-group">
+          <label for="notes">notes</label>
+          {{input value=notes id="notes"}}
+        </div>
+        <button {{action 'saveNewArtwork'}}>Save Artwork</button>
+        <button {{action 'dontSaveArtwork'}}>cancel</button>
+      </form>
+    </div>
+  {{else}}
+    <button class="btn btn-success" {{action 'showArtworkForm'}}>Add New Artwork</button>
+  {{/if}}
+
+</div>

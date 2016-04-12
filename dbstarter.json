@@ -1,0 +1,67 @@
+{
+  "albums":
+  [
+    {
+      "title": "album title",
+      "releaseDate": "album release date, as date object",
+      "cover": "album cover, image as base64 string",
+      "label": "album label"
+    }
+  ],
+  "artworks":
+  [
+    {
+      "title": "artwork title",
+      "artist": "artwork artist",
+      "image": "artwork image, as base64 string",
+      "notes": "artwork notes"
+    }
+  ],
+  "performances":
+  [
+    {
+      "venue": "performance venue name",
+      "address": "performance venue Address",
+      "date": "performance date and time, as date object",
+      "confederates": ["band one", "band two"]
+    }
+  ],
+  "pressclips":
+  [
+    {
+      "title": "pressclip title of article",
+      "author": "pressclip author of article",
+      "text": "pressclip article text",
+      "publication": "pressclip publication",
+      "date": "pressclip date of publication",
+      "link": "pressclip link to article"
+    }
+  ],
+  "products":
+  [
+    {
+      "number": "product number (not sure if we need this)",
+      "name": "product name",
+      "description": "product description",
+      "image": "product image, as base64 string",
+      "price": "product price, in pennies"
+    }
+  ],
+  "songs":
+  [
+    {
+      "title": "song title",
+      "length": "song length",
+      "writer": "song composer (not sure if we need both composer and lyricist)",
+      "lyrics": "song lyrics",
+      "recording": "song recording, audio as base64 string"
+    }
+  ],
+  "videos":
+  [
+    {
+      "director": "video director",
+      "link": "video link"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+<div class="admin-new-press">
+  {{#if addNewPress}}
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="title">title</label>
+          {{input value=title id="title"}}
+        </div>
+        <div class="form-group">
+          <label for="author">author</label>
+          {{input value=author id="author"}}
+        </div>
+        <div class="form-group">
+          <label for="text">text</label>
+          {{input value=text id="text"}}
+        </div>
+        <div class="form-group">
+          <label for="publication">publication</label>
+          {{input value=publication id="publication"}}
+        </div>
+        <div class="form-group">
+          <label for="date">date</label>
+          {{input value=date id="date"}}
+
+          <p>
+            need to be able to collect enough info to get an accurate date object
+          </p>
+
+        </div>
+        <div class="form-group">
+          <label for="link">link</label>
+          {{input value=link id="link"}}
+        </div>
+        <button {{action 'saveNewPress'}}>Save Press</button>
+        <button {{action 'dontSavePress'}}>cancel</button>
+      </form>
+    </div>
+  {{else}}
+    <button class="btn btn-success" {{action 'showPressForm'}}>Add New Press</button>
+  {{/if}}
+</div>

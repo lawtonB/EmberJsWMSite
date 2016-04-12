@@ -1,0 +1,28 @@
+<div class="admin-new-album">
+  {{#if addNewAlbum}}
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="title">title</label>
+          {{input value=title id="title"}}
+        </div>
+        <div class="form-group">
+          <label for="releaseDate">Release Date</label>
+          {{input value=releaseDate id="releaseDate"}}
+        </div>
+        <div class="form-group">
+          <label for="cover">cover</label>
+          {{input value=cover id="cover"}}
+        </div>
+        <div class="form-group">
+          <label for="label">label</label>
+          {{input value=label id="label"}}
+        </div>
+        <button {{action 'saveNewAlbum'}}>Save Album</button>
+        <button {{action 'dontSaveAlbum'}}>cancel</button>
+      </form>
+    </div>
+  {{else}}
+    <button class="btn btn-success" {{action 'showAlbumForm'}}>Add New Album</button>
+  {{/if}}
+</div>
