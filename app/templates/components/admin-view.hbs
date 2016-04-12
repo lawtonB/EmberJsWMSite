@@ -1,8 +1,31 @@
-{{category-nav}}
-{{#if categorySelect.isAlbums}}{{admin-album-list albums=model.albums saveNewAlbum="saveNewAlbum"}}{{/if}}
-{{#if categorySelect.isArtworks}}{{admin-artwork-list artworks=model.artworks}}{{/if}}
-{{#if categorySelect.isPerformances}}{{admin-performance-list performances=model.performances}}{{/if}}
-{{#if categorySelect.isPress}}{{admin-press-list pressclips=model.pressclips}}{{/if}}
-{{#if categorySelect.isProducts}}{{admin-product-list products=model.products}}{{/if}}
-{{#if categorySelect.isSongs}}{{admin-song-list songs=model.songs}}{{/if}}
-{{#if categorySelect.isVideos}}{{admin-video-list videos=model.videos}}{{/if}}
+<div class="admin-view">
+  {{category-nav}}
+
+  {{#if categorySelect.isAlbums}}
+    {{admin-album-list albums=model.albums saveNewAlbum="saveNewAlbum"}}
+  {{/if}}
+
+  {{#if categorySelect.isArtworks}}
+    {{admin-artwork-list artworks=model.artworks saveNewArtwork="saveNewArtwork"}}
+  {{/if}}
+
+  {{#if categorySelect.isPerformances}}
+    {{admin-performance-list performances=model.performances saveNewPerformance="saveNewPerformance"}}
+  {{/if}}
+
+  {{#if categorySelect.isPress}}
+    {{admin-press-list pressclips=model.pressclips saveNewPress="saveNewPress"}}
+  {{/if}}
+
+  {{#if categorySelect.isProducts}}
+    {{admin-product-list products=model.products saveNewProduct="saveNewProduct"}}
+  {{/if}}
+
+  {{#if categorySelect.isSongs}}
+    {{admin-song-list songs=model.songs saveNewSong="saveNewSong"}}
+  {{/if}}
+
+  {{#if categorySelect.isVideos}}
+    {{admin-video-list videos=model.videos saveNewVideo="saveNewVideo"}}
+  {{/if}}
+</div>

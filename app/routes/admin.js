@@ -16,6 +16,30 @@ export default Ember.Route.extend({
     saveNewAlbum(params){
       var newAlbum = this.store.createRecord('album', params);
       newAlbum.save();
+    },
+    saveNewArtwork(params){
+      var newArtwork = this.store.createRecord('artwork', params);
+      newArtwork.save();
+    },
+    saveNewPerformance(params){
+      var newPerformance = this.store.createRecord('performance', params);
+      newPerformance.save();
+    },
+    saveNewPress(params){
+      var newPress = this.store.createRecord('pressclip', params);
+      newPress.save();
+    },
+    saveNewProduct(params){
+      var newProduct = this.store.createRecord('product', params);
+      newProduct.save();
+    },
+    saveNewSong(params){
+      var newSong = this.store.createRecord('song', params);
+      newSong.save();
+    },
+    saveNewVideo(params){
+      var newVideo = this.store.createRecord('video', params);
+      newVideo.save();
     }
   }
 });

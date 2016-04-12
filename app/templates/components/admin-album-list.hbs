@@ -1,6 +1,9 @@
 <div class="admin-album-list">
-  {{#each albums as |album|}}
-    {{admin-album-tile album = album}}
-  {{/each}}
+
   {{admin-new-album saveNewAlbum="saveNewAlbum"}}
+
+  {{#each albums as |album|}}
+    {{admin-album-tile album=album}}
+  {{/each}}
+
 </div>

@@ -1,1 +1,35 @@
-{{yield}}
+<div class="admin-new-product">
+  {{#if addNewProduct}}
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="number">number</label>
+          {{input value=number id="number"}}
+        </div>
+        <div class="form-group">
+          <label for="name">name</label>
+          {{input value=name id="name"}}
+        </div>
+        <div class="form-group">
+          <label for="description">description</label>
+          {{input value=description id="description"}}
+        </div>
+        <div class="form-group">
+          <label for="image">Image File</label>
+          {{input value=image id="image"}}
+        </div>
+        <div class="form-group">
+          <label for="price">price</label>
+          {{input value=price id="price"}}
+          <p>
+            need a way to make sure dollars/cents arent mixed up
+          </p>
+        </div>
+        <button {{action 'saveNewProduct'}}>Save Product</button>
+        <button {{action 'dontSaveProduct'}}>cancel</button>
+      </form>
+    </div>
+  {{else}}
+    <button class="btn btn-success" {{action 'showProductForm'}}>Add New Product</button>
+  {{/if}}
+</div>

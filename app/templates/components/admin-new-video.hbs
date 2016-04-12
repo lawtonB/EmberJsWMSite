@@ -1,1 +1,25 @@
-{{yield}}
+<div class="admin-new-video">
+  {{#if addNewVideo}}
+    <div>
+      <form>
+
+        <p>
+          need to find a way to associate each video with a song
+        </p>
+
+        <div class="form-group">
+          <label for="director">director</label>
+          {{input value=director id="director"}}
+        </div>
+        <div class="form-group">
+          <label for="link">link</label>
+          {{input value=link id="link"}}
+        </div>
+        <button {{action 'saveNewVideo'}}>Save Video</button>
+        <button {{action 'dontSaveVideo'}}>cancel</button>
+      </form>
+    </div>
+  {{else}}
+    <button class="btn btn-success" {{action 'showVideoForm'}}>Add New Video</button>
+  {{/if}}
+</div>
