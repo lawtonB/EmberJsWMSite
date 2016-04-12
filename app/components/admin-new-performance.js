@@ -20,7 +20,13 @@ export default Ember.Component.extend({
         date: this.get('date'),
         confederates: this.get('confederates'),
       };
+
       this.set('addNewPerformance', false);
+      this.set('venue', "");
+      this.set('address', "");
+      this.set('date', "");
+      this.set('confederates', "");
+      
       this.sendAction('saveNewPerformance', params);
     }
   }

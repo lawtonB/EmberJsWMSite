@@ -20,7 +20,13 @@ export default Ember.Component.extend({
         image: this.get('image'),
         notes: this.get('notes'),
       };
+
       this.set('addNewArtwork', false);
+      this.set('title', "");
+      this.set('artist', "");
+      this.set('image', "");
+      this.set('notes', "");
+
       this.sendAction('saveNewArtwork', params);
     }
   }

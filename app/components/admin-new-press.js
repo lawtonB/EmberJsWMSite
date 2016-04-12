@@ -24,7 +24,15 @@ export default Ember.Component.extend({
         date: this.get('date'),
         link: this.get('link')
       };
+      
       this.set('addNewPress', false);
+      this.set('title', "");
+      this.set('author', "");
+      this.set('text', "");
+      this.set('publication', "");
+      this.set('date', "");
+      this.set('link', "");
+
       this.sendAction('saveNewPress', params);
     }
   }
