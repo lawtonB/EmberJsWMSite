@@ -22,7 +22,14 @@ export default Ember.Component.extend({
         image: this.get('image'),
         price: this.get('price')
       };
+
       this.set('addNewProduct', false);
+      this.set('number', "");
+      this.set('name', "");
+      this.set('description', "");
+      this.set('image', "");
+      this.set('price', "");
+      
       this.sendAction('saveNewProduct', params);
     }
   }

@@ -20,7 +20,13 @@ export default Ember.Component.extend({
         cover: this.get('cover'),
         label: this.get('label'),
       };
+      
       this.set('addNewAlbum', false);
+      this.set('title', "");
+      this.set('releaseDate', "");
+      this.set('cover', "");
+      this.set('label', "");
+
       this.sendAction('saveNewAlbum', params);
     }
   }

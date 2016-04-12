@@ -1,4 +1,5 @@
 <div class="admin-song-list">
+  {{admin-new-song saveNewSong="saveNewSong"}}
   {{#each songs as |song|}}
     {{admin-song-tile song=song}}
   {{/each}}

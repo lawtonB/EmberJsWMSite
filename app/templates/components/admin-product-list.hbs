@@ -1,4 +1,5 @@
 <div class="admin-product-list">
+  {{admin-new-product saveNewProduct="saveNewProduct"}}
   {{#each products as |product|}}
     {{admin-product-tile product=product}}
   {{/each}}

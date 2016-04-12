@@ -1,4 +1,5 @@
 <div class="admin-performance-list">
+  {{admin-new-performance saveNewPerformance="saveNewPerformance"}}
   {{#each performances as |performance|}}
     {{admin-performance-tile performance=performance}}
   {{/each}}

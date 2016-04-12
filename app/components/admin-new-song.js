@@ -24,7 +24,15 @@ export default Ember.Component.extend({
         recording: this.get('recording'),
         video: this.get('video')
       };
+
       this.set('addNewSong', false);
+      this.set('title', "");
+      this.set('length', "");
+      this.set('writer', "");
+      this.set('lyrics', "");
+      this.set('recording', "");
+      this.set('video', "");
+      
       this.sendAction('saveNewSong', params);
     }
   }
