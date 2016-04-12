@@ -1,8 +1,8 @@
 {{category-nav}}
-{{admin-album-list albums=model.albums}}
-{{admin-artwork-list artworks=model.artworks}}
-{{admin-performance-list performances=model.performances}}
-{{admin-press-list pressclips=model.pressclips}}
-{{admin-product-list products=model.products}}
-{{admin-song-list songs=model.songs}}
-{{admin-video-list videos=model.videos}}
+{{#if categorySelect.isAlbums}}{{admin-album-list albums=model.albums}}{{/if}}
+{{#if categorySelect.isArtworks}}{{admin-artwork-list artworks=model.artworks}}{{/if}}
+{{#if categorySelect.isPerformances}}{{admin-performance-list performances=model.performances}}{{/if}}
+{{#if categorySelect.isPress}}{{admin-press-list pressclips=model.pressclips}}{{/if}}
+{{#if categorySelect.isProducts}}{{admin-product-list products=model.products}}{{/if}}
+{{#if categorySelect.isSongs}}{{admin-song-list songs=model.songs}}{{/if}}
+{{#if categorySelect.isVideos}}{{admin-video-list videos=model.videos}}{{/if}}

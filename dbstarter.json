@@ -13,7 +13,8 @@
     {
       "title": "artwork title",
       "artist": "artwork artist",
-      "image": "trtwork image, as base64 string"
+      "image": "artwork image, as base64 string",
+      "notes": "artwork notes"
     }
   ],
   "performances":
@@ -21,7 +22,8 @@
     {
       "venue": "performance venue name",
       "address": "performance venue Address",
-      "date": "performance date and time, as date object"
+      "date": "performance date and time, as date object",
+      "confederates": ["band one", "band two"]
     }
   ],
   "pressclips":
@@ -50,8 +52,7 @@
     {
       "title": "song title",
       "length": "song length",
-      "composer": "song composer (not sure if we need both composer and lyricist)",
-      "lyricist": "song lyricist (not sure if we need both composer and lyricist)",
+      "writer": "song composer (not sure if we need both composer and lyricist)",
       "lyrics": "song lyrics",
       "recording": "song recording, audio as base64 string"
     }
