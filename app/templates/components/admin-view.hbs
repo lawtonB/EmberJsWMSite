@@ -1,5 +1,5 @@
 {{category-nav}}
-{{#if categorySelect.isAlbums}}{{admin-album-list albums=model.albums}}{{/if}}
+{{#if categorySelect.isAlbums}}{{admin-album-list albums=model.albums saveNewAlbum="saveNewAlbum"}}{{/if}}
 {{#if categorySelect.isArtworks}}{{admin-artwork-list artworks=model.artworks}}{{/if}}
 {{#if categorySelect.isPerformances}}{{admin-performance-list performances=model.performances}}{{/if}}
 {{#if categorySelect.isPress}}{{admin-press-list pressclips=model.pressclips}}{{/if}}

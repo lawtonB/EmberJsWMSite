@@ -11,5 +11,11 @@ export default Ember.Route.extend({
       songs: this.store.findAll('song'),
       videos: this.store.findAll('video'),
     });
+  },
+  actions: {
+    saveNewAlbum(params){
+      var newAlbum = this.store.createRecord('album', params);
+      newAlbum.save();
+    }
   }
 });
