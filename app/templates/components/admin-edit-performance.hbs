@@ -1,0 +1,39 @@
+<div class="admin-edit-performance">
+  {{#if editPerformanceForm}}
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="venue">venue</label>
+        {{input value=performance.venue id="venue"}}
+      </div>
+      <div class="form-group">
+        <label for="address">address</label>
+        {{input value=performance.address id="address"}}
+      </div>
+      <div class="form-group">
+        <label for="date">date</label>
+        {{input value=performance.date id="date"}}
+
+        <p>
+          need to be able to collect date and times in a way to create a datetime object
+        </p>
+
+      </div>
+      <div class="form-group">
+        <label for="confederates">confederates</label>
+        {{input value=performance.confederates id="confederates"}}
+
+        <p>
+          need to be able to add multiple confederates here
+        </p>
+
+      </div>
+      <button {{action 'editPerformance' performance}}>Update</button>
+      <button {{action 'hideEditForm'}}>Cancel</button>
+      <br>
+    </form>
+  </div>
+  {{else}}
+      <button {{action 'editPerformanceForm'}}>Edit</button>
+      <button {{action 'deletePerformance' performance}}>Delete</button>
+  {{/if}}</div>

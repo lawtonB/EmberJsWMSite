@@ -1,6 +1,6 @@
 <div class="admin-video-list">
   {{admin-new-video saveNewVideo="saveNewVideo"}}
   {{#each  videos as |video|}}
-    {{admin-video-tile video=video}}
+    {{admin-video-tile video=video editVideo="editVideo" deleteVideo="deleteVideo"}}
   {{/each}}
 </div>

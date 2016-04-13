@@ -1,0 +1,42 @@
+<div class="admin-edit-pressclip">
+  {{#if editPressForm}}
+  <div>
+    <form>
+
+      <div class="form-group">
+        <label for="title">title</label>
+        {{input value=pressclip.title id="title"}}
+      </div>
+      <div class="form-group">
+        <label for="author">author</label>
+        {{input value=pressclip.author id="author"}}
+      </div>
+      <div class="form-group">
+        <label for="text">text</label>
+        {{input value=pressclip.text id="text"}}
+      </div>
+      <div class="form-group">
+        <label for="publication">publication</label>
+        {{input value=pressclip.publication id="publication"}}
+      </div>
+      <div class="form-group">
+        <label for="date">date</label>
+        {{input value=pressclip.date id="date"}}
+
+        <p>
+          need to be able to collect enough info to get an accurate date object
+        </p>
+
+      </div>
+
+
+
+      <button {{action 'editPress' pressclip}}>Update</button>
+      <button {{action 'hideEditForm'}}>Cancel</button>
+      <br>
+    </form>
+  </div>
+  {{else}}
+      <button {{action 'editPressForm'}}>Edit</button>
+      <button {{action 'deletePress' pressclip}}>Delete</button>
+  {{/if}}</div>

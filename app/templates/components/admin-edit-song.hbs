@@ -1,0 +1,38 @@
+<div class="admin-edit-song">
+  {{#if editSongForm}}
+  <div>
+    <form>
+
+      <div class="form-group">
+        <label for="title">title</label>
+        {{input value=song.title id="title"}}
+      </div>
+      <div class="form-group">
+        <label for="length">length</label>
+        {{input value=song.length id="length"}}
+      </div>
+      <div class="form-group">
+        <label for="writer">writer</label>
+        {{input value=song.writer id="writer"}}
+      </div>
+      <div class="form-group">
+        <label for="lyrics">lyrics</label>
+        {{input value=song.lyrics id="lyrics"}}
+      </div>
+      <div class="form-group">
+        <label for="recording">recording</label>
+        {{input value=song.recording id="recording"}}
+      </div>
+
+
+
+
+      <button {{action 'editSong' song}}>Update</button>
+      <button {{action 'hideEditForm'}}>Cancel</button>
+      <br>
+    </form>
+  </div>
+  {{else}}
+      <button {{action 'editSongForm'}}>Edit</button>
+      <button {{action 'deleteSong' song}}>Delete</button>
+  {{/if}}</div>

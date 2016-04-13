@@ -1,6 +1,6 @@
 <div class="admin-press-list">
   {{admin-new-press saveNewPress="saveNewPress"}}
   {{#each pressclips as |pressclip|}}
-    {{admin-press-tile pressclip=pressclip}}
+    {{admin-press-tile pressclip=pressclip editPress="editPress" deletePress="deletePress"}}
   {{/each}}
 </div>

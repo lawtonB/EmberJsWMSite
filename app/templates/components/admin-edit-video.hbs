@@ -1,0 +1,25 @@
+<div class="admin-edit-video">
+  {{#if editVideoForm}}
+  <div>
+    <form>
+      <p>
+        need to find a way to associate each video with a song
+      </p>
+
+      <div class="form-group">
+        <label for="director">director</label>
+        {{input value=video.director id="director"}}
+      </div>
+      <div class="form-group">
+        <label for="link">link</label>
+        {{input value=video.link id="link"}}
+      </div>
+      <button {{action 'editVideo' video}}>Update</button>
+      <button {{action 'hideEditForm'}}>Cancel</button>
+      <br>
+    </form>
+  </div>
+  {{else}}
+      <button {{action 'editVideoForm'}}>Edit</button>
+      <button {{action 'deleteVideo' video}}>Delete</button>
+  {{/if}}</div>

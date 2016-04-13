@@ -40,6 +40,48 @@ export default Ember.Route.extend({
     saveNewVideo(params){
       var newVideo = this.store.createRecord('video', params);
       newVideo.save();
+    },
+    editAlbum(album){
+      album.save();
+    },
+    deleteAlbum(album){
+      album.destroyRecord();
+    },
+    editArtwork(artwork){
+      artwork.save();
+    },
+    deleteArtwork(artwork){
+      artwork.destroyRecord();
+    },
+    editPerformance(performance){
+      performance.save();
+    },
+    deletePerformance(performance){
+      performance.destroyRecord();
+    },
+    editPress(pressclip){
+      pressclip.save();
+    },
+    deletePress(pressclip){
+      pressclip.destroyRecord();
+    },
+    editProduct(product){
+      product.save();
+    },
+    deleteProduct(product){
+      product.destroyRecord();
+    },
+    editSong(song){
+      song.save();
+    },
+    deleteSong(song){
+      song.destroyRecord();
+    },
+    editVideo(video){
+      video.save();
+    },
+    deleteVideo(video){
+      video.destroyRecord();
     }
   }
 });
