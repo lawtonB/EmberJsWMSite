@@ -13,16 +13,14 @@ export default Ember.Component.extend({
       this.set('writer', "");
       this.set('lyrics', "");
       this.set('recording', "");
-      this.set('video', "");
     },
     saveNewSong(){
       var params = {
-        title: this.get('title'),
-        length: this.get('length'),
-        writer: this.get('writer'),
-        lyrics: this.get('lyrics'),
-        recording: this.get('recording'),
-        video: this.get('video')
+        title: this.get('title') ? this.get('title'): null,
+        length: this.get('length') ? this.get('length'): null,
+        writer: this.get('writer') ? this.get('writer'): null,
+        lyrics: this.get('lyrics') ? this.get('lyrics'): null,
+        recording: this.get('recording') ? this.get('recording'): null,
       };
 
       this.set('addNewSong', false);
@@ -31,8 +29,7 @@ export default Ember.Component.extend({
       this.set('writer', "");
       this.set('lyrics', "");
       this.set('recording', "");
-      this.set('video', "");
-      
+
       this.sendAction('saveNewSong', params);
     }
   }

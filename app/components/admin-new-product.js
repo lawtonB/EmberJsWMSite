@@ -16,11 +16,11 @@ export default Ember.Component.extend({
     },
     saveNewProduct(){
       var params = {
-        number: this.get('number'),
-        name: this.get('name'),
-        description: this.get('description'),
-        image: this.get('image'),
-        price: this.get('price')
+        number: this.get('number') ? this.get('number'): null,
+        name: this.get('name') ? this.get('name'): null,
+        description: this.get('description') ? this.get('description'): null,
+        image: this.get('image') ? this.get('image'): null,
+        price: this.get('price') ? this.get('price'): null
       };
 
       this.set('addNewProduct', false);
@@ -29,7 +29,7 @@ export default Ember.Component.extend({
       this.set('description', "");
       this.set('image', "");
       this.set('price', "");
-      
+
       this.sendAction('saveNewProduct', params);
     }
   }

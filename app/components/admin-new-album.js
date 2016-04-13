@@ -15,12 +15,12 @@ export default Ember.Component.extend({
     },
     saveNewAlbum(){
       var params = {
-        title: this.get('title'),
-        releaseDate: this.get('releaseDate'),
-        cover: this.get('cover'),
-        label: this.get('label'),
+        title: this.get('title') ? this.get('title'): null,
+        releaseDate: this.get('releaseDate') ? this.get('releaseDate'): null,
+        cover: this.get('cover') ? this.get('cover'): null,
+        label: this.get('label') ? this.get('label'): null,
       };
-      
+
       this.set('addNewAlbum', false);
       this.set('title', "");
       this.set('releaseDate', "");

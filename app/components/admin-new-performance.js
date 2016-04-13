@@ -15,10 +15,10 @@ export default Ember.Component.extend({
     },
     saveNewPerformance(){
       var params = {
-        venue: this.get('venue'),
-        address: this.get('address'),
-        date: this.get('date'),
-        confederates: this.get('confederates'),
+        venue: this.get('venue') ? this.get('venue'): null,
+        address: this.get('address') ? this.get('address'): null,
+        date: this.get('date') ? this.get('date'): null,
+        confederates: this.get('confederates') ? this.get('confederates'): null,
       };
 
       this.set('addNewPerformance', false);
@@ -26,7 +26,7 @@ export default Ember.Component.extend({
       this.set('address', "");
       this.set('date', "");
       this.set('confederates', "");
-      
+
       this.sendAction('saveNewPerformance', params);
     }
   }
