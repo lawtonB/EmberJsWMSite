@@ -1,0 +1,16 @@
+.wm-site-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.wm-container {
+  max-width: 1200px;
+  border: 2px solid green;
+  margin: auto;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
