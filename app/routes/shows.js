@@ -2,6 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findAll('artwork');
-  }
+      return this.store.findAll('performance');
+    }
 });

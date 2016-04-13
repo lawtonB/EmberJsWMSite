@@ -13,6 +13,7 @@ Router.map(function() {
   this.route('artwork');
   this.route('press');
   this.route('video');
+  this.route('shows');
 });
 
 export default Router;
