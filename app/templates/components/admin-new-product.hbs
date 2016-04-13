@@ -20,10 +20,8 @@
         </div>
         <div class="form-group">
           <label for="price">price</label>
-          {{input value=price id="price"}}
-          <p>
-            need a way to make sure dollars/cents arent mixed up
-          </p>
+          {{input value=dollars id="dollars"}}
+          {{input value=cents id="cents"}}
         </div>
         <button {{action 'saveNewProduct'}}>Save Product</button>
         <button {{action 'dontSaveProduct'}}>cancel</button>
