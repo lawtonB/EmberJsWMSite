@@ -12,15 +12,17 @@ export default Ember.Component.extend({
       this.set('name', "");
       this.set('description', "");
       this.set('image', "");
-      this.set('price', "");
+      this.set('dollars', "");
+      this.set('cents', "");
     },
     saveNewProduct(){
+      var correctPrice = parseInt(this.get('dollars')) * 100 + parseInt(this.get('cents'))
       var params = {
         number: this.get('number'),
         name: this.get('name'),
         description: this.get('description'),
         image: this.get('image'),
-        price: this.get('price')
+        price: correctPrice
       };
 
       this.set('addNewProduct', false);
@@ -28,8 +30,10 @@ export default Ember.Component.extend({
       this.set('name', "");
       this.set('description', "");
       this.set('image', "");
-      this.set('price', "");
-      
+      this.set('dollars', "");
+      this.set('cents', "");
+
+
       this.sendAction('saveNewProduct', params);
     }
   }
