@@ -1,13 +1,20 @@
 .about-content {
   display: flex;
   flex-direction: column;
-  border: 4px solid red;
+  // border: 4px solid red;
   padding: 0 20px;
-
+  @media screen and(min-width: $large-screen) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .about-header-img {
+    max-width: 100%;
+    margin: auto;
+  }
   .about-wm {
     display: flex;
     flex-direction: column;
-    border: 4px solid blue;
+    // border: 4px solid blue;
     margin-bottom: 25px;
     .band-drawing {
       display: flex;
@@ -16,30 +23,59 @@
       justify-content: center;
       margin: auto;
       @media screen and(min-width: $large-screen) {
-        width: 75%;
+        width: 50%;
         order: 1;
       }
     }
+    @media screen and(min-width: $large-screen) {
+      flex-direction: row;
+      align-items: center;
+    }
     .about-text {
-      img {
-        display: block;
-        margin: auto;
-        max-width: 100%;
+      @media screen and(min-width: $large-screen) {
+        display: flex;
+        flex-direction: column;
+        order: 2;
+        padding: 50px;
+        p {
+          font-size: 1.17em;
+        }
       }
     }
   }
-
   .wm-friends {
-    border: 4px solid orange;
+    // border: 4px solid orange;
     margin-bottom: 25px;
-    a {
-      display: block;
-      width: 100%;
-      font-size: 1.3em;
-      margin: 10px 0;
+    width: 100%;
+    .friends-links {
+      a {
+        display: block;
+        width: 100%;
+        font-size: 1.3em;
+        margin: 10px 0;
+      }
+      @media screen and(min-width: $large-screen) {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        // border: 4px solid green;
+        text-align: right;
+        padding: 50px;
+      }
     }
 
-
+    img {
+      display: block;
+      margin: auto;
+      max-width: 100%;
+      @media screen and(min-width: $large-screen) {
+        width: 50%;
+        border: 4px solid brown;
+      }
+    }
+    @media screen and(min-width: $large-screen) {
+      display: flex;
+      align-items: center;
+    }
   }
-
 }
