@@ -1,1 +1,5 @@
-{{structure-show-tile performance=model}}
+{{log performances}}
+{{#each performances as |performance|}}
+{{log performance}}
+{{structure-show-tile performance=performance}}
+{{/each}}
