@@ -2,30 +2,30 @@
   {{category-nav}}
 
   {{#if categorySelect.isAlbums}}
-    {{admin-album-list albums=model.albums saveNewAlbum="saveNewAlbum"}}
+    {{admin-album-list albums=model.albums saveNewAlbum="saveNewAlbum" editAlbum="editAlbum" deleteAlbum="deleteAlbum"}}
   {{/if}}
 
   {{#if categorySelect.isArtworks}}
-    {{admin-artwork-list artworks=model.artworks saveNewArtwork="saveNewArtwork"}}
+    {{admin-artwork-list artworks=model.artworks saveNewArtwork="saveNewArtwork" editArtwork="editArtwork" deleteArtwork="deleteArtwork"}}
   {{/if}}
 
   {{#if categorySelect.isPerformances}}
-    {{admin-performance-list performances=model.performances saveNewPerformance="saveNewPerformance"}}
+    {{admin-performance-list performances=model.performances saveNewPerformance="saveNewPerformance" editPerformance="editPerformance" deletePerformance="deletePerformance"}}
   {{/if}}
 
   {{#if categorySelect.isPress}}
-    {{admin-press-list pressclips=model.pressclips saveNewPress="saveNewPress"}}
+    {{admin-press-list pressclips=model.pressclips saveNewPress="saveNewPress" editPress="editPress" deletePress="deletePress"}}
   {{/if}}
 
   {{#if categorySelect.isProducts}}
-    {{admin-product-list products=model.products saveNewProduct="saveNewProduct"}}
+    {{admin-product-list products=model.products saveNewProduct="saveNewProduct" editProduct="editProduct" deleteProduct="deleteProduct"}}
   {{/if}}
 
   {{#if categorySelect.isSongs}}
-    {{admin-song-list songs=model.songs saveNewSong="saveNewSong"}}
+    {{admin-song-list songs=model.songs saveNewSong="saveNewSong" editSong="editSong" deleteSong="deleteSong"}}
   {{/if}}
 
   {{#if categorySelect.isVideos}}
-    {{admin-video-list videos=model.videos saveNewVideo="saveNewVideo"}}
+    {{admin-video-list videos=model.videos saveNewVideo="saveNewVideo" editVideo="editVideo" deleteVideo="deleteVideo"}}
   {{/if}}
 </div>

@@ -1,15 +1,21 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  showForm: false,
   actions: {
-    saveNewPress(params){
-      this.sendAction('saveNewPress', params);
+    editPressForm() {
+      this.set('editPressForm', true);
+    },
+    hideEditForm(){
+      this.set('editPressForm', false);
     },
     editPress(pressclip){
+      this.set('editPressForm', false);
       this.sendAction('editPress', pressclip);
     },
     deletePress(pressclip){
       this.sendAction('deletePress', pressclip);
     }
   }
+
 });

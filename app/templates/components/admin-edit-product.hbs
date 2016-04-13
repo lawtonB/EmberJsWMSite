@@ -1,0 +1,40 @@
+<div class="admin-edit-product">
+  {{#if editProductForm}}
+  <div>
+    <form>
+
+      <div class="form-group">
+        <label for="number">number</label>
+        {{input value=product.number id="number"}}
+      </div>
+      <div class="form-group">
+        <label for="name">name</label>
+        {{input value=product.name id="name"}}
+      </div>
+      <div class="form-group">
+        <label for="description">description</label>
+        {{input value=product.description id="description"}}
+      </div>
+      <div class="form-group">
+        <label for="image">Image File</label>
+        {{input value=product.image id="image"}}
+      </div>
+      <div class="form-group">
+        <label for="price">price</label>
+        {{input value=product.price id="price"}}
+        <p>
+          need a way to make sure dollars/cents arent mixed up
+        </p>
+      </div>
+
+
+
+      <button {{action 'editProduct' product}}>Update</button>
+      <button {{action 'hideEditForm'}}>Cancel</button>
+      <br>
+    </form>
+  </div>
+  {{else}}
+      <button {{action 'editProductForm'}}>Edit</button>
+      <button {{action 'deleteProduct' product}}>Delete</button>
+  {{/if}}</div>

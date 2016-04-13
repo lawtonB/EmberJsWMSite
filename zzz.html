@@ -5,26 +5,27 @@
     <title>encoder</title>
     <script type="text/javascript">
       function convertFile() {
-        var file = document.querySelector('input[type=file]').files[0];
+        var audioFile = document.getElementById("audio-input").files[0];
         var reader = new FileReader();
 
         reader.addEventListener("load", function() {
-          document.getElementById("output").innerHTML = reader.result;
+          document.getElementById("audio-string").innerHTML = reader.result;
           document.querySelector('audio').src = reader.result;
+
         }, false);
 
-          if (file) {
-            reader.readAsDataURL(file);
+          if (audioFile) {
+            reader.readAsDataURL(audioFile);
           }
       }
     </script>
   </head>
   <body>
-    <input type="file" onchange="convertFile()"><br>
+    <input type="file" onchange="convertFile()" id="audio-input"><br>
     <h3>Player:</h3>
     <audio controls src=""></audio>
     <h3>String:</h3>
-    <p id="output"></p>
+    <p id="audio-string"></p>
 
   </body>
 </html>

@@ -1,0 +1,29 @@
+<div class="admin-edit-album">
+  {{#if editAlbumForm}}
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="title">title</label>
+        {{input value=album.title id="title"}}
+      </div>
+      <div class="form-group">
+        <label for="releaseDate">Release Date</label>
+        {{input value=album.releaseDate id="releaseDate"}}
+      </div>
+      <div class="form-group">
+        <label for="cover">cover</label>
+        {{input value=album.cover id="cover"}}
+      </div>
+      <div class="form-group">
+        <label for="label">label</label>
+        {{input value=album.label id="label"}}
+      </div>
+      <button {{action 'editAlbum' album}}>Update</button>
+      <button {{action 'hideEditForm'}}>Cancel</button>
+      <br>
+    </form>
+  </div>
+  {{else}}
+      <button {{action 'editAlbumForm'}}>Edit</button>
+      <button {{action 'deleteAlbum' album}}>Delete</button>
+  {{/if}}</div>
