@@ -30,12 +30,18 @@
     border: 2px solid lime;
     justify-content: center;
     img {
-      width: 80%;
-      height: 80%;
+      // width: 80%;
+      // height: 80%;
       margin: auto;
       display: block;
       border: 2px solid blue;
-      margin: 200px 0;
+      margin: 100px 0;
+      @media screen and(min-width: $medium-screen) {
+        margin: 0;
+      }
+      @media screen and(min-width: $medium-screen) {
+        margin: 100px 0;
+      }
     }
     @media screen and(min-width: $medium-screen) {
       display: flex;
