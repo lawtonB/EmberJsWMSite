@@ -18,6 +18,7 @@ export default Ember.Component.extend({
     saveNewProduct(){
       var correctPrice = parseInt(this.get('dollars')) * 100 + parseInt(this.get('cents'))
       var params = {
+
         number: this.get('number'),
         name: this.get('name'),
         description: this.get('description'),

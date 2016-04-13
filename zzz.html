@@ -6,12 +6,13 @@
     <script type="text/javascript">
       function convertFile() {
         var audioFile = document.getElementById("audio-input").files[0];
+        console.log(audioFile);
+        console.log(document.getElementById("audio-input"));
         var reader = new FileReader();
 
         reader.addEventListener("load", function() {
           document.getElementById("audio-string").innerHTML = reader.result;
           document.querySelector('audio').src = reader.result;
-
         }, false);
 
           if (audioFile) {

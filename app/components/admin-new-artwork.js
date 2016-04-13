@@ -15,10 +15,10 @@ export default Ember.Component.extend({
     },
     saveNewArtwork(){
       var params = {
-        title: this.get('title'),
-        artist: this.get('artist'),
-        image: this.get('image'),
-        notes: this.get('notes'),
+        title: this.get('title') ? this.get('title'): null,
+        artist: this.get('artist') ? this.get('artist'): null,
+        image: this.get('image') ? this.get('image'): null,
+        notes: this.get('notes') ? this.get('notes'): null
       };
 
       this.set('addNewArtwork', false);

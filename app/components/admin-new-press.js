@@ -17,14 +17,14 @@ export default Ember.Component.extend({
     },
     saveNewPress(){
       var params = {
-        title: this.get('title'),
-        author: this.get('author'),
-        text: this.get('text'),
-        publication: this.get('publication'),
-        date: this.get('date'),
-        link: this.get('link')
+        title: this.get('title') ? this.get('title'): null,
+        author: this.get('author') ? this.get('author'): null,
+        text: this.get('text') ? this.get('text'): null,
+        publication: this.get('publication') ? this.get('publication'): null,
+        date: this.get('date') ? this.get('date'): null,
+        link: this.get('link') ? this.get('link'): null
       };
-      
+
       this.set('addNewPress', false);
       this.set('title', "");
       this.set('author', "");
