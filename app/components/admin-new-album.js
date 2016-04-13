@@ -14,20 +14,33 @@ export default Ember.Component.extend({
       this.set('label', "");
     },
     saveNewAlbum(){
-      var params = {
-        title: this.get('title') ? this.get('title'): null,
-        releaseDate: this.get('releaseDate') ? this.get('releaseDate'): null,
-        cover: this.get('cover') ? this.get('cover'): null,
-        label: this.get('label') ? this.get('label'): null,
-      };
 
-      this.set('addNewAlbum', false);
-      this.set('title', "");
-      this.set('releaseDate', "");
-      this.set('cover', "");
-      this.set('label', "");
 
-      this.sendAction('saveNewAlbum', params);
+      var coverImage = document.getElementById('cover').files[0];
+      var reader = new FileReader();
+      var imageData= "";
+      reader.readAsDataURL(coverImage);
+      var self = this;
+      reader.addEventListener("load", function() {
+        imageData = reader.result;
+
+        var params = {
+          title: self.get('title') ? self.get('title'): null,
+          releaseDate: self.get('date') ? self.get('date'): null,
+          cover: imageData,
+          label: self.get('label') ? self.get('label'): null,
+        };
+        self.set('addNewAlbum', false);
+        self.set('title', "");
+        self.set('releaseDate', "");
+        self.set('cover', "");
+        self.set('label', "");
+
+        self.sendAction('saveNewAlbum', params);
+
+        }, false);
+
+
     }
   }
 });

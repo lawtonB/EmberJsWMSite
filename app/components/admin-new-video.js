@@ -13,8 +13,8 @@ export default Ember.Component.extend({
     },
     saveNewVideo(){
       var params = {
-        director: this.get('director'), ? this.get('director'): null
-        link: this.get('link'), ? this.get('link'): null
+        director: this.get('director') ? this.get('director'): null,
+        link: this.get('link') ? this.get('link'): null
       };
 
       this.set('addNewVideo', false);
