@@ -10,7 +10,7 @@ export function formatDate(params) {
   var hour = ((date.slice(0,2) + 11) % 12) + 1 + ":";
   var minute = date.slice(2, 4);
   var formatDate = hour + minute + " " + day + " " + year;
-  return formatDate
+  return formatDate;
   }
 
 export default Ember.Helper.helper(formatDate);
