@@ -37,8 +37,7 @@ export default Ember.Component.extend({
         self.set('notes', "");
 
         self.sendAction('saveNewArtwork', params);
-        }, false);
-
+      }, false);
     }
   }
 });

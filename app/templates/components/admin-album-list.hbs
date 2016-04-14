@@ -1,6 +1,6 @@
 <div class="admin-album-list">
   {{admin-new-album saveNewAlbum="saveNewAlbum"}}
   {{#each albums as |album|}}
-    {{admin-album-tile album=album editAlbum="editAlbum" deleteAlbum="deleteAlbum"}}
+    {{admin-album-tile album=album editAlbum="editAlbum" deleteAlbum="deleteAlbum" saveNewSong="saveNewSong" deleteSong="deleteSong" editSong="editSong"}}
   {{/each}}
 </div>

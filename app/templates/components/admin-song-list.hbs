@@ -1,5 +1,7 @@
 <div class="admin-song-list">
-  {{admin-new-song saveNewSong="saveNewSong"}}
+  {{log "song list, album: " album}}
+  {{log "song list, songs: " songs}}
+  {{admin-new-song album=album saveNewSong="saveNewSong"}}
   {{#each songs as |song|}}
     {{admin-song-tile song=song editSong="editSong" deleteSong="deleteSong"}}
   {{/each}}

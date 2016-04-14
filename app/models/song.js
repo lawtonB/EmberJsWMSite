@@ -6,6 +6,7 @@ export default DS.Model.extend({
   writer: DS.attr(),
   lyrics: DS.attr(),
   recording: DS.attr(),
+  videoLink: DS.attr(),
   album: DS.belongsTo(),
   video: DS.belongsTo()
 });
