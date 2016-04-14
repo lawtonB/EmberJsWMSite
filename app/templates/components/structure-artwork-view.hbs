@@ -1,7 +1,14 @@
 <div class='structure-artwork-view'>
-  <img class="artwork-header-img" src="assets/images/severed-head.jpg" alt="Severed Head on Floor" />
   <h3>Artwork Archive</h3>
+  <img class="artwork-header-img" src="assets/images/severed-head.jpg" alt="Severed Head on Floor" />
   {{#each artworks as |artwork|}}
     {{structure-artwork-tile artwork=artwork}}
   {{/each}}
+  <div class='structure-artwork-tile'>
+    <img class="individual-artwork" src="assets/images/july2109-greenladies.jpg" alt="Green Ladies poster" />
+    <p>{{artwork.title}}</p>
+    <p>{{artwork.artist}}</p>
+    <p>{{artwork.notes}}</p>
+  </div>
+
 </div>
