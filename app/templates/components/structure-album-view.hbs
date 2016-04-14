@@ -1,15 +1,17 @@
 <div class='structure-album-view'>
   <h2>Discography</h2>
-  {{#each model as |album|}}
-    {{structure-album-tile album=album}}
-  {{/each}}
+  <div class="album-gallery">
+    {{#each model as |album|}}
+      {{structure-album-tile album=album}}
+    {{/each}}
+  </div>
+</div>
 
-
-  <div class= 'structure-album-tile'>
+  <!-- <div class= 'structure-album-tile'> -->
     <!-- delete all of these below once albums have been added to database -->
-    <ul>
+    <!-- <ul>
       <li>
-        <img src="assets/images/albumCovers/andandandsplit-howilearnedtoshave.jpg" alt="" />
+
         <span>How I Learned To Shave</span>
       </li>
       <li>
@@ -50,5 +52,5 @@
       </li>
     </ul>
 
-  </div>
-</div>
+  </div> -->
+<!-- </div> -->

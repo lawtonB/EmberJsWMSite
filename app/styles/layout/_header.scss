@@ -10,7 +10,12 @@ header {
     margin: 20px auto;
     display: block;
     @media screen and(min-width: $medium-screen) {
+      // display: none;
+      width: 15%;
+    }
+    @media screen and(min-width: $large-screen) {
       display: none;
+      // width: 25%;
     }
   }
   @media screen and(min-width: $medium-screen) {
