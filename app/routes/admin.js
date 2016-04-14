@@ -9,7 +9,7 @@ export default Ember.Route.extend({
       pressclips: this.store.findAll('pressclip'),
       products: this.store.findAll('product'),
       songs: this.store.findAll('song'),
-      videos: this.store.findAll('video'),
+      videos: this.store.findAll('video')
     });
   },
   actions: {
@@ -35,6 +35,11 @@ export default Ember.Route.extend({
     },
     saveNewSong(params){
       var newSong = this.store.createRecord('song', params);
+      var album = params.album;
+      album.get('songs').addObject(newSong);
+      newSong.save().then(function(){
+        return album.save();
+      });
       newSong.save();
     },
     saveNewVideo(params){

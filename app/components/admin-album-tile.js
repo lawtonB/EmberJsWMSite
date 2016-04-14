@@ -11,6 +11,12 @@ export default Ember.Component.extend({
     },
     saveNewSong(params){
       this.sendAction('saveNewSong', params);
+    },
+    deleteSong(song){
+      this.sendAction('deleteSong', song);
+    },
+    editSong(song){
+      this.sendAction('editSong', song);
     }
 
   }

@@ -1,11 +1,9 @@
 <div class="admin-song-tile">
-  <h3>{{song.title}}</h3>
-  <p>{{song.length}}</p>
-  <p>{{song.writer}}</p>
+  <h3>Song Title: {{song.title}}</h3>
+  <p>Song Length: {{song.length}}</p>
+  <p>Song Writer: {{song.writer}}</p>
+  <audio controls src={{song.recording}}></audio><br/>
+  <a href={{song.videoLink}} target="blank">Video Link</a>
   <p>{{song.lyrics}}</p>
-  <p>display song.recording either as a link or as the src for an audio tag</p>
-  <p>
-    display song.album here
-  </p>
   {{admin-edit-song song=song editSong="editSong" deleteSong="deleteSong"}}
 </div>

@@ -17,15 +17,16 @@
       </div>
       <div class="form-group">
         <label for="lyrics">lyrics</label>
-        {{input value=song.lyrics id="lyrics"}}
+        {{textarea value=song.lyrics id="lyrics"}}
+      </div>
+      <div class="form-group">
+        <label for="videoLink">video link</label>
+        {{input value=song.videoLink id="videoLink"}}
       </div>
       <div class="form-group">
         <label for="recording">recording</label>
-        {{input value=song.recording id="recording"}}
+        {{input id="recording" type='file'}}
       </div>
-
-
-
 
       <button {{action 'editSong' song}}>Update</button>
       <button {{action 'hideEditForm'}}>Cancel</button>
