@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid blue;
+    // border: 2px solid blue;
     margin-bottom: 25px;
     @media screen and(min-width: $large-screen) {
       flex-direction: row;
@@ -21,7 +21,7 @@
       }
     }
     .video-meta {
-      border: 2px solid brown;
+      // border: 2px solid brown;
       text-align: center;
       @media screen and(min-width: $large-screen) {
         margin: auto;
