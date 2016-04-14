@@ -12,21 +12,11 @@
       </div>
       <div class="form-group">
         <label for="date">date</label>
-        {{input value=performance.date id="date"}}
-
-        <p>
-          need to be able to collect date and times in a way to create a datetime object
-        </p>
-
+        {{input value=performance.date id="date" type="datetime-local"}}
       </div>
       <div class="form-group">
-        <label for="confederates">confederates</label>
-        {{input value=performance.confederates id="confederates"}}
-
-        <p>
-          need to be able to add multiple confederates here
-        </p>
-
+        <label>confederates</label>
+          {{input value=performance.confederates}}
       </div>
       <button {{action 'editPerformance' performance}}>Update</button>
       <button {{action 'hideEditForm'}}>Cancel</button>

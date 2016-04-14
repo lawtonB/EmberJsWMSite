@@ -14,20 +14,31 @@ export default Ember.Component.extend({
       this.set('notes', "");
     },
     saveNewArtwork(){
-      var params = {
-        title: this.get('title') ? this.get('title'): null,
-        artist: this.get('artist') ? this.get('artist'): null,
-        image: this.get('image') ? this.get('image'): null,
-        notes: this.get('notes') ? this.get('notes'): null
-      };
 
-      this.set('addNewArtwork', false);
-      this.set('title', "");
-      this.set('artist', "");
-      this.set('image', "");
-      this.set('notes', "");
 
-      this.sendAction('saveNewArtwork', params);
+      var artworkImage = document.getElementById('image').files[0];
+      var reader = new FileReader();
+      var imageData= "";
+      reader.readAsDataURL(artworkImage);
+      var self = this;
+      reader.addEventListener("load", function() {
+        imageData = reader.result;
+
+        var params = {
+          title: self.get('title') ? self.get('title'): null,
+          artist: self.get('artist') ? self.get('artist'): null,
+          image: imageData,
+          notes: self.get('notes') ? self.get('notes'): null,
+        };
+        self.set('addNewArtwork', false);
+        self.set('title', "");
+        self.set('artist', "");
+        self.set('image', "");
+        self.set('notes', "");
+
+        self.sendAction('saveNewArtwork', params);
+        }, false);
+
     }
   }
 });

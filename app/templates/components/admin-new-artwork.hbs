@@ -12,7 +12,7 @@
         </div>
         <div class="form-group">
           <label for="image">image</label>
-          {{input value=image id="image"}}
+          {{input type='file' value=image id="image"}}
         </div>
         <div class="form-group">
           <label for="notes">notes</label>
@@ -23,7 +23,7 @@
       </form>
     </div>
   {{else}}
-    <button class="btn btn-success" {{action 'showArtworkForm'}}>Add New Artwork</button>
+    <button class="btn" {{action 'showArtworkForm'}}>Add New Artwork</button>
   {{/if}}
 
 </div>

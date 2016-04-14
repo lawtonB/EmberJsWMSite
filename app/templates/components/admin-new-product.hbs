@@ -4,7 +4,7 @@
       <form>
         <div class="form-group">
           <label for="number">number</label>
-          {{input value=number id="number"}}
+          {{input value=number id="number" type='number'}}
         </div>
         <div class="form-group">
           <label for="name">name</label>
@@ -16,18 +16,18 @@
         </div>
         <div class="form-group">
           <label for="image">Image File</label>
-          {{input value=image id="image"}}
+          {{input id="productImage" type='file'}}
         </div>
         <div class="form-group">
           <label for="price">price</label>
-          {{input value=dollars id="dollars"}}
-          {{input value=cents id="cents"}}
+          {{input value=dollars id="dollars" type='number' min='0'}}
+          {{input value=cents id="cents" type='number' min='0' max='99'}}
         </div>
         <button {{action 'saveNewProduct'}}>Save Product</button>
         <button {{action 'dontSaveProduct'}}>cancel</button>
       </form>
     </div>
   {{else}}
-    <button class="btn btn-success" {{action 'showProductForm'}}>Add New Product</button>
+    <button class="btn" {{action 'showProductForm'}}>Add New Product</button>
   {{/if}}
 </div>
