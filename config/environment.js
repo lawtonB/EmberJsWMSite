@@ -5,12 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'wm-site',
     environment: environment,
 
-    firebase: 'https://wmsite-test.firebaseio.com/',
-
-
-    //HEY LOOK HERE THIS IS A TEST DB//
-    firebase: 'https://wmsite-test.firebaseio.com/',
-    ///////////////////////////////////////////////
+    firebase: 'https://woolenmen.firebaseio.com/',
 
 
     baseURL: '/',
