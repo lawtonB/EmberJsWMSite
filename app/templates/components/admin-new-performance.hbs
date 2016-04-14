@@ -4,7 +4,7 @@
       <form>
         <div class="form-group">
           <label for="venue">venue</label>
-          {{input value=venue id="venue"}}
+          {{input value=venue}}
         </div>
         <div class="form-group">
           <label for="address">address</label>
@@ -12,17 +12,17 @@
         </div>
         <div class="form-group">
           <label for="date">date</label>
-          {{input value=date id="date"}}
-
-          <p>
-            need to be able to collect date and times in a way to create a datetime object
-          </p>
+          {{input value=date id="date" type="datetime-local"}}
+          {{log date}}
 
         </div>
         <div class="form-group">
           <label for="confederates">confederates</label>
-          {{input value=confederates id="confederates"}}
-
+          {{input value=confederates0 id="confederates"}}
+          {{input value=confederates1}}
+          {{input value=confederates2}}
+          {{input value=confederates3}}
+          {{input value=confederates4}}
           <p>
             need to be able to add multiple confederates here
           </p>
