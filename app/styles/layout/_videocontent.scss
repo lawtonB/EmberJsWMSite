@@ -10,11 +10,11 @@
     align-items: center;
     // border: 2px solid blue;
     margin-bottom: 25px;
-    @media screen and(min-width: $large-screen) {
-      flex-direction: row;
-      margin: auto;
-      margin-bottom: 25px;
-    }
+    // @media screen and(min-width: $large-screen) {
+    //   flex-direction: row;
+    //   margin: auto;
+    //   margin-bottom: 25px;
+    // }
     .video-container {
       iframe {
         max-width: 100%;
