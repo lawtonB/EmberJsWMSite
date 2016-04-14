@@ -14,13 +14,14 @@ export default Ember.Component.extend({
       this.set('lyrics', "");
       this.set('recording', "");
     },
-    saveNewSong(){
+    saveNewSong(album){
       var params = {
         title: this.get('title') ? this.get('title'): null,
         length: this.get('length') ? this.get('length'): null,
         writer: this.get('writer') ? this.get('writer'): null,
         lyrics: this.get('lyrics') ? this.get('lyrics'): null,
         recording: this.get('recording') ? this.get('recording'): null,
+        album: album
       };
 
       this.set('addNewSong', false);

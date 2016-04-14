@@ -1,7 +1,7 @@
 <div class="admin-view container" >
   {{category-nav}}
 
-  {{#if categorySelect.isAlbums}}
+  {{#if categorySelect.isMusic}}
     {{admin-album-list albums=model.albums saveNewAlbum="saveNewAlbum" editAlbum="editAlbum" deleteAlbum="deleteAlbum"}}
   {{/if}}
 
@@ -19,13 +19,5 @@
 
   {{#if categorySelect.isProducts}}
     {{admin-product-list products=model.products saveNewProduct="saveNewProduct" editProduct="editProduct" deleteProduct="deleteProduct"}}
-  {{/if}}
-
-  {{#if categorySelect.isSongs}}
-    {{admin-song-list songs=model.songs saveNewSong="saveNewSong" editSong="editSong" deleteSong="deleteSong"}}
-  {{/if}}
-
-  {{#if categorySelect.isVideos}}
-    {{admin-video-list videos=model.videos saveNewVideo="saveNewVideo" editVideo="editVideo" deleteVideo="deleteVideo"}}
   {{/if}}
 </div>

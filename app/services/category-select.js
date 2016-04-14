@@ -5,7 +5,7 @@ export default Ember.Service.extend({
   isProducts: false,
   isArtworks: false,
   isPress: false,
-  isAlbums: false,
+  isMusic: false,
   isSongs: false,
   isVideos: false,
 
@@ -15,63 +15,35 @@ export default Ember.Service.extend({
       this.set('isProducts', false);
       this.set('isArtworks', false);
       this.set('isPress', false);
-      this.set('isAlbums', false);
-      this.set('isSongs', false);
-      this.set('isVideos', false);
+      this.set('isMusic', false);
     }
     if (category === 'products'){
       this.set('isPerformances', false);
       this.set('isProducts', true);
       this.set('isArtworks', false);
       this.set('isPress', false);
-      this.set('isAlbums', false);
-      this.set('isSongs', false);
-      this.set('isVideos', false);
+      this.set('isMusic', false);
     }
     if (category === 'artworks'){
       this.set('isPerformances', false);
       this.set('isProducts', false);
       this.set('isArtworks', true);
       this.set('isPress', false);
-      this.set('isAlbums', false);
-      this.set('isSongs', false);
-      this.set('isVideos', false);
+      this.set('isMusic', false);
     }
     if (category === 'press'){
       this.set('isPerformances', false);
       this.set('isProducts', false);
       this.set('isArtworks', false);
       this.set('isPress', true);
-      this.set('isAlbums', false);
-      this.set('isSongs', false);
-      this.set('isVideos', false);
+      this.set('isMusic', false);
     }
     if (category === 'albums'){
       this.set('isPerformances', false);
       this.set('isProducts', false);
       this.set('isArtworks', false);
       this.set('isPress', false);
-      this.set('isAlbums', true);
-      this.set('isSongs', false);
-      this.set('isVideos', false);
-    }
-    if (category === 'songs'){
-      this.set('isPerformances', false);
-      this.set('isProducts', false);
-      this.set('isArtworks', false);
-      this.set('isPress', false);
-      this.set('isAlbums', false);
-      this.set('isSongs', true);
-      this.set('isVideos', false);
-    }
-    if (category === 'videos'){
-      this.set('isPerformances', false);
-      this.set('isProducts', false);
-      this.set('isArtworks', false);
-      this.set('isPress', false);
-      this.set('isAlbums', false);
-      this.set('isSongs', false);
-      this.set('isVideos', true);
+      this.set('isMusic', true);
     }
   }
 
