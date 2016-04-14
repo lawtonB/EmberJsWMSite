@@ -12,4 +12,4 @@ export default Ember.Route.extend({
       videos: this.store.findAll('video'),
     });
   }
-})
+});

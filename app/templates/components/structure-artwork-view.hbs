@@ -1,4 +1,7 @@
-{{log artworks}}
-{{#each artworks as |artwork|}}
-{{structure-artwork-tile artwork=artwork}}
-{{/each}}
+<div class='structure-artwork-view'>
+  <img class="artwork-header-img" src="assets/images/severed-head.jpg" alt="Severed Head on Floor" />
+  <h3>Artwork Archive</h3>
+  {{#each artworks as |artwork|}}
+    {{structure-artwork-tile artwork=artwork}}
+  {{/each}}
+</div>

@@ -1,0 +1,14 @@
+.structure-artwork-view {
+  display: flex;
+  flex-direction: column;
+  .artwork-header-img {
+    max-width: 100%;
+  }
+  .structure-artwork-tile {
+    display: flex;
+    flex-direction: column;
+    .individual-artwork {
+      width: 80vw;
+    }
+  }
+}
