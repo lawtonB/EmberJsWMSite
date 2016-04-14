@@ -3,8 +3,9 @@
   <p>{{album.releaseDate}}</p>
   <img src={{album.cover}}/>
   <p>{{album.label}}</p>
-  <p>
-    put songs list here.
-  </p>
   {{admin-edit-album album=album editAlbum="editAlbum" deleteAlbum="deleteAlbum"}}
+  <p>
+    Songs:
+  </p>
+  {{admin-song-list album=album songs=album.songs saveNewSong="saveNewSong" editSong="editSong" deleteSong="deleteSong"}}
 </div>

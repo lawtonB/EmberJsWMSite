@@ -8,6 +8,10 @@ export default Ember.Component.extend({
     },
     deleteAlbum(album){
       this.sendAction('deleteAlbum', album);
+    },
+    saveNewSong(params){
+      this.sendAction('saveNewSong', params);
     }
+
   }
 });
