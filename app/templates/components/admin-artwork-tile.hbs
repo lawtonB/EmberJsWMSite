@@ -1,9 +1,7 @@
 <div class="admin-artwork-tile">
-  <h3>{{artwork.title}}</h3>
-  <p>{{artwork.artist}}</p>
-  <p>
-    artwork.image as image tag source
-  </p>
-  <p>{{artwork.notes}}</p>
+  <h3>Title: {{artwork.title}}</h3>
+  <p>Artist: {{artwork.artist}}</p>
+  <img src="{{artwork.image}}" alt="" />
+  <p>Notes: {{artwork.notes}}</p>
   {{admin-edit-artwork artwork=artwork editArtwork="editArtwork" deleteArtwork="deleteArtwork"}}
 </div>

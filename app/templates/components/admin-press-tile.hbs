@@ -3,11 +3,9 @@
   <p>{{pressclip.author}}</p>
   <p>{{pressclip.text}}</p>
   <p>{{pressclip.publication}}</p>
+
   <p>
-    need to format pressclip.date here
-  </p>
-  <p>
-    display pressclip.link as the href of an anchor tag
+    <a href={{pressclip.link}} target="blank">link</a>
   </p>
   {{admin-edit-pressclip pressclip=pressclip editPress="editPress" deletePress="deletePress"}}
 </div>

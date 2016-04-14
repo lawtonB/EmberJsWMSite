@@ -3,12 +3,7 @@
   <p>Address: {{performance.address}}</p>
   <p>Date: {{performance.date}}</p>
   <p>With:</p>
-  <ul>
-    {{#each performance.confederates as |confederate|}}
-      <li>{{confederate}}</li>
-    {{/each}}
-  </ul>
-
+  <p>{{performance.confederates}}</p>
 
   {{admin-edit-performance performance=performance editPerformance="editPerformance" deletePerformance="deletePerformance"}}
 </div>

@@ -2,7 +2,6 @@
   {{#if editPressForm}}
   <div>
     <form>
-
       <div class="form-group">
         <label for="title">title</label>
         {{input value=pressclip.title id="title"}}
@@ -22,15 +21,7 @@
       <div class="form-group">
         <label for="date">date</label>
         {{input value=pressclip.date id="date"}}
-
-        <p>
-          need to be able to collect enough info to get an accurate date object
-        </p>
-
       </div>
-
-
-
       <button {{action 'editPress' pressclip}}>Update</button>
       <button {{action 'hideEditForm'}}>Cancel</button>
       <br>

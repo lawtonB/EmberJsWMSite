@@ -13,8 +13,6 @@
         <div class="form-group">
           <label for="date">date</label>
           {{input value=date id="date" type="datetime-local"}}
-          {{log date}}
-
         </div>
         <div class="form-group">
           <label for="confederates">confederates</label>
@@ -23,16 +21,12 @@
           {{input value=confederates2}}
           {{input value=confederates3}}
           {{input value=confederates4}}
-          <p>
-            need to be able to add multiple confederates here
-          </p>
-
         </div>
         <button {{action 'saveNewPerformance'}}>Save Performance</button>
         <button {{action 'dontSavePerformance'}}>cancel</button>
       </form>
     </div>
   {{else}}
-    <button class="btn btn-success" {{action 'showPerformanceForm'}}>Add New Performance</button>
+    <button class="btn" {{action 'showPerformanceForm'}}>Add New Performance</button>
   {{/if}}
 </div>

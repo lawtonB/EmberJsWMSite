@@ -2,6 +2,7 @@
   <h3>{{product.number}}</h3>
   <p>{{product.name}}</p>
   <p>{{product.description}}</p>
+  <img src={{product.image}}/>
   <p>{{format-currency product.price}}</p>
 
   {{admin-edit-product product=product editProduct="editProduct" deleteProduct="deleteProduct"}}

@@ -10,32 +10,52 @@ export default Ember.Component.extend({
       this.set('addNewProduct', false);
       this.set('number', "");
       this.set('name', "");
-      this.set('description', "");
       this.set('image', "");
+      this.set('description', "");
       this.set('dollars', "");
       this.set('cents', "");
     },
     saveNewProduct(){
-      var correctPrice = parseInt(this.get('dollars')) * 100 + parseInt(this.get('cents'));
-      var params = {
+      if (this.get('cents')===undefined){
+        this.set('cents',"0");
+      }
+      else if(this.get('cents').length===0) {
+        this.set('cents',"0");
+      }
+      if (this.get('dollars')===undefined){
+        this.set('dollars',"0");
+      }
+      else if(this.get('dollars').length===0) {
+        this.set('dollars',"0");
+      }
+      var image = document.getElementById('productImage').files[0];
+      var reader = new FileReader();
+      var imageData= "";
+      reader.readAsDataURL(image);
+      var self = this;
+      reader.addEventListener("load", function() {
+        imageData = reader.result;
 
-        number: this.get('number'),
-        name: this.get('name'),
-        description: this.get('description'),
-        image: this.get('image'),
+      var correctPrice = parseInt(self.get('dollars')) * 100 + parseInt(self.get('cents'));
+      var params = {
+        number: self.get('number'),
+        name: self.get('name'),
+        description: self.get('description'),
+        image: imageData,
         price: correctPrice
       };
 
-      this.set('addNewProduct', false);
-      this.set('number', "");
-      this.set('name', "");
-      this.set('description', "");
-      this.set('image', "");
-      this.set('dollars', "");
-      this.set('cents', "");
+      self.set('addNewProduct', false);
+      self.set('number', "");
+      self.set('name', "");
+      self.set('description', "");
+      self.set('image', "");
+      self.set('dollars', "");
+      self.set('cents', "");
 
+      self.sendAction('saveNewProduct', params);
 
-      this.sendAction('saveNewProduct', params);
+      }, false);
     }
   }
 });

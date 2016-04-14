@@ -34,12 +34,13 @@ export default Ember.Component.extend({
       if (this.get('confederates4')){
         confederatesList.push(this.get('confederates4'));
       }
+      confederatesList = confederatesList.join(", ");
 
       var params = {
         venue: this.get('venue') ? this.get('venue'): null,
         address: this.get('address') ? this.get('address'): null,
         date: this.get('date') ? this.get('date'): null,
-        confederates: confederatesList
+        confederates: confederatesList ? confederatesList :null,
       };
 
       this.set('addNewPerformance', false);

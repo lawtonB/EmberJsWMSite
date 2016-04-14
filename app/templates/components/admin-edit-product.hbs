@@ -2,10 +2,9 @@
   {{#if editProductForm}}
   <div>
     <form>
-
       <div class="form-group">
         <label for="number">number</label>
-        {{input value=product.number id="number"}}
+        {{input value=product.number id="number" type='number'}}
       </div>
       <div class="form-group">
         <label for="name">name</label>
@@ -17,18 +16,12 @@
       </div>
       <div class="form-group">
         <label for="image">Image File</label>
-        {{input value=product.image id="image"}}
+        {{input id="newImage" type='file'}}
       </div>
       <div class="form-group">
-        <label for="price">price</label>
-        {{input value=product.price id="price"}}
-        <p>
-          need a way to make sure dollars/cents arent mixed up
-        </p>
+        <label for="price">Price in pennies, please no decimals: </label>
+        {{input value=product.price id="price" type='number'}}
       </div>
-
-
-
       <button {{action 'editProduct' product}}>Update</button>
       <button {{action 'hideEditForm'}}>Cancel</button>
       <br>
