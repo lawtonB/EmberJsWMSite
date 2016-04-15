@@ -1,15 +1,25 @@
+@font-face {
+  font-family: Didactic-Regular;
+  src: url(fonts/Didactic/webfont/Didactic-Regular.woff);
+}
+
+body {
+  background: $main-bg-color;
+  font-family: Didactic-Regular;
+}
+
 .wm-site-wrapper {
   display: flex;
   flex-direction: column;
   @font-face {
-    font-family: "brelaregular";
+    font-family: "Didactic-Regular";
     src: url("../public/assets/fonts/brelaregular.woff") format('woff');
   }
 }
 
 .wm-container {
   max-width: 1200px;
-  border: 2px solid green;
+  // border: 2px solid green;
   margin: auto;
 }
 
@@ -18,4 +28,28 @@
 ul {
   list-style: none;
   padding: 0;
+}
+
+a {
+  color: $grey-text;
+  transition: 0.3s;
+}
+
+a:hover {
+  transform: scale(1.05);
+  color:$linkcolor;
+  transition: 0.3s;
+}
+
+
+.social {
+  text-align: center;
+  .soc-icon {
+    margin: 20px 20px;
+    width: 50px;
+    height: 50px;
+    @media screen and(min-width: $medium-screen) {
+      margin: 20px 80px;
+    }
+  }
 }
