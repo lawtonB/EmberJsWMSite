@@ -1,0 +1,75 @@
+.main-home-content {
+  border: 2px solid purple;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media screen and(min-width: $large-screen) {
+    flex-direction: row;
+  }
+  .latest-release {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    order: 1;
+    h2 {
+      text-transform: uppercase;
+    }
+    img {
+      max-width: 75%;
+      margin: 25px 0;
+    }
+    @media screen and(min-width: $large-screen) {
+      order: 1;
+    }
+  }
+  .main-logo {
+    display: none;
+    border: 2px solid lime;
+    justify-content: center;
+    img {
+      // width: 80%;
+      // height: 80%;
+      margin: auto;
+      display: block;
+      border: 2px solid blue;
+      margin: 100px 0;
+      @media screen and(min-width: $medium-screen) {
+        margin: 0;
+      }
+      @media screen and(min-width: $medium-screen) {
+        margin: 100px 0;
+      }
+    }
+    @media screen and(min-width: $medium-screen) {
+      display: flex;
+    }
+    @media screen and(min-width: $large-screen) {
+      order: 2;
+    }
+  }
+  .upcoming-shows {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    border: 2px solid orange;
+    order: 2;
+    .upcoming-show-list {
+      border: 2px solid blue;
+      h2 {
+        text-transform: uppercase;
+        margin-bottom: 25px;
+      }
+      .upcoming-show-item {
+        text-align: center;
+        margin-bottom: 25px;
+      }
+    }
+    @media screen and(min-width: $large-screen) {
+      order: 3;
+    }
+  }
+}

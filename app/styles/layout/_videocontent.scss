@@ -1,0 +1,35 @@
+.structure-video-view {
+  padding: 20px;
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .structure-video-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // border: 2px solid blue;
+    margin-bottom: 25px;
+    // @media screen and(min-width: $large-screen) {
+    //   flex-direction: row;
+    //   margin: auto;
+    //   margin-bottom: 25px;
+    // }
+    .video-container {
+      iframe {
+        max-width: 100%;
+      }
+    }
+    .video-meta {
+      // border: 2px solid brown;
+      text-align: center;
+      @media screen and(min-width: $large-screen) {
+        margin: auto;
+      }
+    }
+
+  }
+
+
+
+}

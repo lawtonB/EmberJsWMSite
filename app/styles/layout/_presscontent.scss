@@ -1,0 +1,26 @@
+.structure-press-view {
+  padding: 20px;
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .structure-press-tile {
+    margin: auto;
+    margin-bottom: 25px;
+    width: 75%;
+    border-bottom: 2px solid #333;
+    padding-bottom: 25px;
+    span {
+      font-weight: normal;
+      text-transform: capitalize;
+    }
+    .publisher {
+      text-transform: none;
+    }
+    h3 {
+      text-transform: capitalize;
+    }
+  }
+
+
+}

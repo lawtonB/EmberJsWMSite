@@ -1,0 +1,68 @@
+.structure-album-view {
+  border: 2px solid red;
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .album-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    .structure-album-tile {
+        .ember-view {
+          border: 3px solid blue;
+          display: block;
+          text-align: center;
+          margin: 25px;
+          img {
+            display: block;
+            max-width: 300px;
+            max-height: 100%;
+          }
+          span {
+            font-size: 1.5em;
+          }
+        }
+      }
+    }
+  }
+
+
+// SCSS for individual album page
+
+.structure-selected-album-view {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid blue;
+  padding: 20px;
+  .album-primary {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid teal;
+    margin-bottom: 25px;
+    @media screen and(min-width: $medium-screen) {
+      flex-direction: row;
+    }
+    .album-cover {
+      border: 2px solid orange;
+      flex: 2;
+      img {
+        max-width: 100%;
+      }
+    }
+    .album-meta {
+      border: 2px solid purple;
+      flex: 1;
+      text-align: center;
+    }
+  }
+  .album-tracklist {
+    border: 2px solid lime;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+
+
+}

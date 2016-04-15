@@ -1,6 +1,8 @@
-<p>{{pressclip.title}}</p>
-<p>{{pressclip.author}}</p>
-<p>{{pressclip.text}}</p>
-<p>{{pressclip.publication}}</p>
-<p>{{pressclip.date}}</p>
-<p>{{pressclip.link}}</p>
+<div class="structure-press-tile">
+  <h3>{{pressclip.title}}</h3>
+  <h4>Date: <span>{{pressclip.date}}</span></h4>
+  <h4>Author: <span>{{pressclip.author}}</span></h4>
+  <h4>Publisher: <span class="publisher">{{pressclip.publication}}</span></h4>
+  <h4><a target="_blank" href="{{pressclip.link}}">Link to Full Article</a></h4>
+  <p>{{pressclip.text}}...</p>
+</div>

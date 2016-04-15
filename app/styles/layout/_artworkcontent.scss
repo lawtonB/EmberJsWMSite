@@ -1,0 +1,34 @@
+.structure-artwork-view {
+  margin-top: 40px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  @media screen and(min-width: $medium-screen) {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  .artwork-head {
+    text-align: center;
+  }
+  .artwork-header-img {
+    box-shadow: 0px 3px 10px #ccc;
+    max-width: 100%;
+  }
+  .structure-artwork-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+    max-width: 360px;
+    @media screen and(min-width: $medium-screen) {
+      margin: 25px;
+    }
+    .individual-artwork {
+      box-shadow: 0px 5px 10px 2px #ccc;
+      max-width: 100%;
+    }
+  }
+}

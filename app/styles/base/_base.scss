@@ -1,6 +1,10 @@
 .wm-site-wrapper {
   display: flex;
   flex-direction: column;
+  @font-face {
+    font-family: "brelaregular";
+    src: url("../public/assets/fonts/brelaregular.woff") format('woff');
+  }
 }
 
 .wm-container {
@@ -8,6 +12,7 @@
   border: 2px solid green;
   margin: auto;
 }
+
 
 
 ul {

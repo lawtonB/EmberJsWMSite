@@ -1,3 +1,17 @@
-"this is the index view!"
-{{structure-show-detail performances=model.performances}}
-{{structure-album-detail-tile albums=model.albums}}
+<div class="main-home-content">
+
+  <div class="latest-release">
+    <h2>Latest Release</h2>
+    <img src="assets/images/wm-logo.png" alt="woolen men logo" />
+    <!--change later, this is a temporary image-->
+  </div>
+
+  <div class="main-logo">
+    <img src="assets/images/wm-logo.png" alt="woolen men logo" />
+  </div>
+
+  <div class="upcoming-shows">
+    {{structure-show-detail performances=model.performances}}
+  </div>
+
+</div>

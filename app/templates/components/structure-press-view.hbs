@@ -1,4 +1,6 @@
-{{log pressclip}}
-{{#each pressclips as |pressclip|}}
-{{structure-press-tile pressclip=pressclip}}
-{{/each}}
+<div class="structure-press-view">
+  <h2>Press</h2>
+  {{#each pressclips as |pressclip|}}
+    {{structure-press-tile pressclip=pressclip}}
+  {{/each}}
+</div>
