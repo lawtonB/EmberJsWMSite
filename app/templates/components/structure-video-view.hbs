@@ -1,13 +1,62 @@
-{{#each videos as |video|}}
-{{structure-video-tile video=video}}
-{{/each}}
+<div class="structure-video-view">
+  <h2>Music Videos</h2>
+  {{#each videos as |video|}}
+    {{structure-video-tile video=video}}
+  {{/each}}
 
-https://www.youtube.com/watch?v=tAZko_MSZhc temporary monument video
+  <div class="structure-video-tile">
+    <div class="video-container">
+      <iframe width="640" height="360" src="https://www.youtube.com/embed/tAZko_MSZhc" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video-meta">
+      <h2>Temporary Monument</h2>
+      <h4>Director</h4>
+      <h4>Lawton Browning</h4>
+    </div>
+  </div>
 
-https://vimeo.com/45364687 two brothers video
+  <div class="structure-video-tile">
+    <div class="video-container">
+      <iframe src="https://player.vimeo.com/video/61973780" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+    <div class="video-meta">
+      <h2>Hold It Up</h2>
+      <h4>Director</h4>
+      <h4>Jeffrey Kriksciun</h4>
+    </div>
+  </div>
 
-https://vimeo.com/120440530 rain video
+  <div class="structure-video-tile">
+    <div class="video-container">
+      <iframe src="https://player.vimeo.com/video/45364687" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+    <div class="video-meta">
+      <h2>Two Brothers</h2>
+      <h4>Director</h4>
+      <h4>Leo Townsell</h4>
+    </div>
+  </div>
 
-https://www.youtube.com/watch?v=95qSKH_5IX4 today video
+  <div class="structure-video-tile">
+    <div class="video-container">
+      <iframe width="640" height="360" src="https://www.youtube.com/embed/95qSKH_5IX4" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video-meta">
+      <h2>Today</h2>
+      <h4>Director</h4>
+      <h4>Jeff Wood</h4>
+    </div>
+  </div>
 
-https://vimeo.com/61973780 hold it up
+  <div class="structure-video-tile">
+    <div class="video-container">
+      <iframe src="https://player.vimeo.com/video/120440530" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+    <div class="video-meta">
+      <h2>Rain</h2>
+      <h4>Director</h4>
+      <h4>Lawton Browning</h4>
+    </div>
+  </div>
+
+</div>

@@ -1,5 +1,9 @@
-{{log performances}}
-{{#each performances as |performance|}}
-{{log performance}}
-{{structure-show-tile performance=performance}}
-{{/each}}
+<div class="structure-show-view">
+  <h2>Upcoming Shows</h2>
+  <div class="show-schedule">
+    <h3 class="showyear">2016</h3>
+    {{#each performances as |performance|}}
+      {{structure-show-tile performance=performance}}
+    {{/each}}
+  </div>
+</div>

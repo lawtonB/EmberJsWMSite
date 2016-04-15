@@ -1,3 +1,6 @@
-<div class= 'structure-album-tile'>
-{{#link-to 'structure-selected-album' album.id}}{{album.title}}{{/link-to}}
+<div class='structure-album-tile'>
+  {{#link-to 'structure-selected-album' album.id}}
+    <img src={{album.cover}} alt={{album.title}} />
+    <span>{{album.title}}</span>
+  {{/link-to}}
 </div>

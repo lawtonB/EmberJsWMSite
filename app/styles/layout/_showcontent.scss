@@ -1,0 +1,21 @@
+.structure-show-view {
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .show-schedule {
+    width: 75%;
+    margin: auto;
+    .showyear {
+      border-bottom: 2px solid #333;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+    }
+    .structure-show-tile {
+      text-align: center;
+      margin: auto;
+      margin-bottom: 50px;
+      max-width: 360px;
+    }
+  }
+}
