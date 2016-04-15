@@ -23,6 +23,7 @@
     img {
       max-width: 75%;
       margin: 25px 0;
+      box-shadow: 0px 5px 10px 2px #ccc;
     }
     @media screen and(min-width: $large-screen) {
       order: 1;
@@ -35,6 +36,8 @@
     img {
       // width: 80%;
       // height: 80%;
+      max-width: 454px;
+      max-height: 454px;
       margin: auto;
       display: block;
       // border: 2px solid blue;
@@ -76,3 +79,11 @@
     }
   }
 }
+
+@-webkit-keyframes wobble  {
+  0%  { -webkit-transform:  rotate(0deg); }
+  20%  { -webkit-transform:  rotate(5deg); }
+  50%  { -webkit-transform:  rotate(-5deg); }
+  100%  { -webkit-transform:  rotate(0deg); }
+}
+.wobble { -webkit-animation: wobble 10s infinite; }

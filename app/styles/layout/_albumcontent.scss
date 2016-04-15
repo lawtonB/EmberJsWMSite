@@ -21,8 +21,10 @@
 
           img {
             display: block;
+            box-shadow: 0px 5px 10px 2px #ccc;
             max-width: 300px;
             max-height: 100%;
+            margin-bottom: 10px;
           }
           span {
             font-size: 1.5em;
@@ -53,6 +55,7 @@
       flex: 2;
       img {
         max-width: 100%;
+        box-shadow: 0px 5px 10px 2px #ccc;
       }
     }
     .album-meta {
