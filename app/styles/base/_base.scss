@@ -11,6 +11,17 @@
   max-width: 1200px;
   border: 2px solid green;
   margin: auto;
+  .social {
+    display: flex;
+    flex-direction: row;
+    .links {
+      align-items: center;
+      .soc-icon {
+        height: 40px;
+        width: 40px;
+      }
+    }
+  }
 }
 
 
