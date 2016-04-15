@@ -8,7 +8,9 @@ export function formatDate(params) {
   var time = date.slice(11, 16);
   var hour = time.slice(0,2);
   var minute = parseInt(time.slice(3, 5));
+  var period;
   var monthString;
+  var minuteString;
 
   if (month===1){monthString="January";}
   if (month===2){monthString="February";}
@@ -26,28 +28,19 @@ export function formatDate(params) {
   hour = parseInt(hour);
 
   if (hour>11){
-    var period = "pm";
+    period = "pm";
   }
   else {
-    var period = "am";
+    period = "am";
   }
   hour = hour%12;
 
   if(minute<10){
-    var minuteString = "0"+minute;
+    minuteString = "0"+minute;
   }
   else {
-    var minuteString=""+minute;
+    minuteString=""+minute;
   }
-
-  console.log(date);
-  console.log(year);
-  console.log(month);
-  console.log(day);
-  console.log(time);
-  console.log(hour);
-  console.log(minute);
-  console.log(period);
 
 
   return monthString + " "+ day+", "+year+ " "+ hour+ ":"+ minuteString+period;

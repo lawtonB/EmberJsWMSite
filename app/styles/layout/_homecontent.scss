@@ -79,11 +79,3 @@
     }
   }
 }
-
-@-webkit-keyframes wobble  {
-  0%  { -webkit-transform:  rotate(0deg); }
-  20%  { -webkit-transform:  rotate(5deg); }
-  50%  { -webkit-transform:  rotate(-5deg); }
-  100%  { -webkit-transform:  rotate(0deg); }
-}
-.wobble { -webkit-animation: wobble 10s infinite; }
