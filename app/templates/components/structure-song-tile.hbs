@@ -2,13 +2,7 @@
   <h3>{{song.title}}</h3>
   <p>{{song.length}}</p>
   <p>credits: {{song.writer}}</p>
-  {{#if song.hasRecording}}
-    <audio controls src={{song.recording}}></audio><br/>
-  {{/if}}
-
-  {{#unless song.hasNolink}}
-    {{log "test" song.hasNoLink}}
-    <a href={{song.videoLink}} target="blank">Video Link</a>
-  {{/unless}}
+  <audio controls class={{link-hider song.recording}} src={{song.recording}}></audio><br/>
+  <a href={{song.videoLink}} class={{link-hider song.videoLink}} target="blank">Video Link</a>
   <p>{{song.lyrics}}</p>
 </div>
