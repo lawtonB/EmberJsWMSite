@@ -41,7 +41,8 @@
           margin: 0 auto;
         }
         &:hover {
-          color: #fff;
+          text-decoration: none;
+          color: $linkcolor;
         }
       }
     }
