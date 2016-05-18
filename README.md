@@ -1,6 +1,6 @@
 # Wm-site
 
-This is the public site for the Woolen Men an independent band based out of portland, ore. The site uses firebase and ember JS to inform the public about upcoming shows, discography, songs and art related to the band.
+This is the public site for the Woolen Men, an independent band based out of portland, OR. The site uses the ember JS framework to display and inform the public about upcoming shows, discography, songs and art related to the band. Hosted on https://www.firebase.com/, this site uses scripting to allow the user to upload MP3 files and images, link to news and other sites related to the band, host video links and update band information via the firebase database.
 
 ## Prerequisites
 
@@ -37,7 +37,7 @@ You will need the following things properly installed on your computer.
 
 ### built by
 
-Lawton Browning
-David Diehr
-Jeff Seymour
-Schuyler Klaassen
+Lawton Browning - project lead/ framework programming
+David Diehr - database programing, file upload program
+Jeff Seymour - styling/css/scss/mobile design
+Schuyler Klaassen - styling/css/scss/mobile design
