@@ -1,18 +1,18 @@
 @font-face {
-  font-family: Didactic-Regular;
+  font-family: Didactic-Regular, sans-serif;
   src: url(fonts/Didactic/webfont/Didactic-Regular.woff);
 }
 
 body {
   background: $main-bg-color;
-  font-family: Didactic-Regular;
+  font-family: Didactic-Regular, sans-serif;
 }
 
 .wm-site-wrapper {
   display: flex;
   flex-direction: column;
   @font-face {
-    font-family: "Didactic-Regular";
+    font-family: "Didactic-Regular", sans-serif;
     src: url("../public/assets/fonts/brelaregular.woff") format('woff');
   }
 }

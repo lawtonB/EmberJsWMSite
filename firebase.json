@@ -1,6 +1,6 @@
 {
   "firebase": "wmsite",
-  "public": "public",
+  "public": "dist", 
   "ignore": [
     "firebase.json",
     "**/.*",
